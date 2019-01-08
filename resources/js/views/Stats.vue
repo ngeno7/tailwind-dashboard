@@ -1,12 +1,10 @@
 <template>
-    <div>
+        <div>
         <nav class="bg-grey-light p-3 rounded m-4">
           <ol class="list-reset flex text-grey-dark">
             <li><a href="#" class="text-blue font-bold">Home</a></li>
             <li><span class="mx-2">/</span></li>
-            <li><a href="#" class="text-blue font-bold">Library</a></li>
-            <li><span class="mx-2">/</span></li>
-            <li>Data</li>
+            <li>Stats</li>
           </ol>
         </nav>
         <div class="flex flex-wrap">
