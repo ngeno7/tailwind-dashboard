@@ -9,12 +9,6 @@
                     </router-link>
                 </li>
                 <li class="mr-3 flex-1">
-                    <router-link class="nav-link hover:text-white hover:border-red" :class="toggle ? '' : 'border-b-2'" :to="{ name: 'stats'}">
-                        <i class="fas fa-signal pr-0 md:pr-3"></i>
-                        <span class="nav-link-text" :class="!toggle ? 'visible' : 'invisible'">Stats</span>
-                    </router-link>
-                </li>
-                <li class="mr-3 flex-1">
                     <router-link class="nav-link hover:text-white hover:border-red" :class="toggle ? '' : 'border-b-2'" :to="{ name: 'forms'}">
                         <i class="fas fa-users pr-0 md:pr-3"></i>
                         <span class="nav-link-text" :class="!toggle ? 'visible' : 'invisible'">Forms</span>
@@ -24,6 +18,12 @@
                     <router-link class="nav-link hover:text-white hover:border-red" :class="toggle ? '' : 'border-b-2'" :to="{ name: 'forms'}">
                         <i class="fas fa-cogs pr-0 md:pr-3"></i>
                         <span class="nav-link-text" :class="!toggle ? 'visible' : 'invisible'">Settings</span>
+                    </router-link>
+                </li>
+                <li class="mr-3 flex-1">
+                    <router-link class="nav-link hover:text-white hover:border-red" :class="toggle ? '' : 'border-b-2'" :to="{ name: 'LogIn'}">
+                        <i class="fas fa-lock pr-0 md:pr-3"></i>
+                        <span class="nav-link-text" :class="!toggle ? 'visible' : 'invisible'">Log in</span>
                     </router-link>
                 </li>
             </ul>

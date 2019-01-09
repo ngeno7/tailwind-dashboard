@@ -1,5 +1,6 @@
 <template>
-        <div>
+  <base-layout>
+    <template slot="breadcrumb-content">
         <nav class="bg-grey-light p-3 rounded m-4">
           <ol class="list-reset flex text-grey-dark">
             <li><a href="#" class="text-blue font-bold">Home</a></li>
@@ -7,6 +8,8 @@
             <li>Forms</li>
           </ol>
         </nav>
+    </template>
+    <template slot="main-content">
         <div class="flex flex-wrap">
           <div class="w-full p-3">
             <form class="w-full max-w-md">
@@ -66,5 +69,6 @@
             </form>
           </div>
         </div>
-    </div>
+    </template>
+  </base-layout>
 </template>

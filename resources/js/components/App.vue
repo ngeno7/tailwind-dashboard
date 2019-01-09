@@ -1,12 +1,6 @@
 <template>
-    <div>
-    <Nav/>
-    <div class="flex flex-row"> 
-        <Sidebar/>
-        <div class="main-content flex-1 bg-grey-lightest mt-12 md:mt-2 pb-24 md:pb-5">
-            <router-view/>
-        </div>
-    </div> 
+<div>
+    <router-view/>
 </div>
 </template>
 <script>
