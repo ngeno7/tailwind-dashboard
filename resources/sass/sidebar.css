@@ -1,0 +1,23 @@
+.sidebar-max {
+    @apply bg-black shadow-lg h-16 pin-l mt-12 z-10 w-full;
+}
+.sidebar-min {
+    @apply bg-black shadow-lg h-16 pin-l mt-12 z-10 w-12;
+}
+.side-nav-list {
+  @apply list-reset flex flex-col text-left py-0 px-1 text-center;  
+}
+@screen md {
+    .sidebar-max {
+        @apply w-48 relative h-screen;
+    }
+    .side-nav-list {
+        @apply px-2 py-3 text-left;
+    }
+    .sidebar-min {
+        @apply w-12 relative h-screen;
+    }
+    .side-nav-list > li {
+        @apply border-none;
+    }
+}
