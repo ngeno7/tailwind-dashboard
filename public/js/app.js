@@ -1787,6 +1787,57 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Nav.vue?vue&type=script&lang=js&":
+/*!**************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib??ref--4-0!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/Nav.vue?vue&type=script&lang=js& ***!
+  \**************************************************************************************************************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ __webpack_exports__["default"] = ({
+  data: function data() {
+    return {
+      visible: false
+    };
+  }
+});
+
+/***/ }),
+
 /***/ "./node_modules/bootstrap/dist/js/bootstrap.js":
 /*!*****************************************************!*\
   !*** ./node_modules/bootstrap/dist/js/bootstrap.js ***!
@@ -36683,112 +36734,117 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", [
+    _c(
+      "nav",
+      {
+        staticClass:
+          "bg-blue-lighter pt-2 md:pt-1 pb-1 px-1 mt-0 h-auto fixed w-full z-20 pin-t"
+      },
+      [
+        _c("div", { staticClass: "flex flex-wrap" }, [
+          _vm._m(0),
+          _vm._v(" "),
+          _c("div", {
+            staticClass: "flex flex-shrink md:w-2/3 md:justify-end text-white"
+          }),
+          _vm._v(" "),
+          _c(
+            "div",
+            { staticClass: "flex w-full pt-2 md:w-1/6 md:justify-end" },
+            [
+              _c("ul", { staticClass: "list-reset flex flex-1 md:flex-none" }, [
+                _c(
+                  "li",
+                  { staticClass: "flex-1 md:flex-none md:mr-3 float-right" },
+                  [
+                    _c("div", { staticClass: "relative inline-block" }, [
+                      _c(
+                        "button",
+                        {
+                          staticClass:
+                            "drop-button text-white focus:outline-none",
+                          on: {
+                            click: function($event) {
+                              $event.preventDefault()
+                              _vm.visible = !_vm.visible
+                            }
+                          }
+                        },
+                        [
+                          _vm._m(1),
+                          _c("i", { staticClass: "fa fa-caret-down" })
+                        ]
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "div",
+                        {
+                          staticClass:
+                            "dropdownlist absolute bg-black text-white pin-r mt-3 p-3 overflow-auto z-30",
+                          class: _vm.visible ? "" : "invisible",
+                          attrs: { id: "myDropdown" }
+                        },
+                        [
+                          _c("div", {
+                            staticClass: "border border-grey-darkest"
+                          }),
+                          _vm._v(" "),
+                          _vm._m(2)
+                        ]
+                      )
+                    ])
+                  ]
+                )
+              ])
+            ]
+          )
+        ])
+      ]
+    )
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
-      _c(
-        "nav",
-        {
-          staticClass:
-            "bg-blue-lighter pt-2 md:pt-1 pb-1 px-1 mt-0 h-auto fixed w-full z-20 pin-t"
-        },
-        [
-          _c("div", { staticClass: "flex flex-wrap" }, [
-            _c(
-              "div",
-              {
-                staticClass:
-                  "flex flex-shrink md:w-1/6 md:justify-end text-white"
-              },
-              [
-                _c("a", { staticClass: "float-right", attrs: { href: "#" } }, [
-                  _c("span", { staticClass: "text-xl pl-2" }, [
-                    _c("i", { staticClass: "fa fa-bars" })
-                  ])
-                ])
-              ]
-            ),
-            _vm._v(" "),
-            _c("div", {
-              staticClass: "flex flex-shrink md:w-2/3 md:justify-end text-white"
-            }),
-            _vm._v(" "),
-            _c(
-              "div",
-              { staticClass: "flex w-full pt-2 md:w-1/6 md:justify-end" },
-              [
-                _c(
-                  "ul",
-                  { staticClass: "list-reset flex flex-1 md:flex-none" },
-                  [
-                    _c(
-                      "li",
-                      {
-                        staticClass: "flex-1 md:flex-none md:mr-3 float-right"
-                      },
-                      [
-                        _c("div", { staticClass: "relative inline-block" }, [
-                          _c(
-                            "button",
-                            {
-                              staticClass:
-                                "drop-button text-white focus:outline-none"
-                            },
-                            [
-                              _c("span", { staticClass: "pr-2" }, [
-                                _c("i", { staticClass: "fa fa-user" })
-                              ]),
-                              _vm._v(" Hi, User "),
-                              _c("i", { staticClass: "fa fa-caret-down" })
-                            ]
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "div",
-                            {
-                              staticClass:
-                                "dropdownlist absolute bg-black text-white pin-r mt-3 p-3 overflow-auto z-30 invisible",
-                              attrs: { id: "myDropdown" }
-                            },
-                            [
-                              _c("div", {
-                                staticClass: "border border-grey-darkest"
-                              }),
-                              _vm._v(" "),
-                              _c(
-                                "a",
-                                {
-                                  staticClass:
-                                    "p-2 hover:bg-grey-darkest text-white text-sm no-underline hover:no-underline block",
-                                  attrs: { href: "#" }
-                                },
-                                [
-                                  _c("i", {
-                                    staticClass: "fas fa-sign-out-alt fa-fw"
-                                  }),
-                                  _vm._v(
-                                    " Log Out\n                                      "
-                                  )
-                                ]
-                              )
-                            ]
-                          )
-                        ])
-                      ]
-                    )
-                  ]
-                )
-              ]
-            )
+    return _c(
+      "div",
+      { staticClass: "flex flex-shrink md:w-1/6 md:justify-end text-white" },
+      [
+        _c("a", { staticClass: "float-right", attrs: { href: "#" } }, [
+          _c("span", { staticClass: "text-xl pl-2" }, [
+            _c("i", { staticClass: "fa fa-bars" })
           ])
-        ]
-      )
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("span", { staticClass: "pr-2" }, [
+      _c("i", { staticClass: "fa fa-user" })
     ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "a",
+      {
+        staticClass:
+          "p-2 hover:bg-grey-darkest text-white text-sm no-underline hover:no-underline block",
+        attrs: { href: "#" }
+      },
+      [
+        _c("i", { staticClass: "fas fa-sign-out-alt fa-fw" }),
+        _vm._v(" Log Out\n                                      ")
+      ]
+    )
   }
 ]
 render._withStripped = true
@@ -51423,15 +51479,17 @@ __webpack_require__.r(__webpack_exports__);
 "use strict";
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Nav_vue_vue_type_template_id_7cd4f788___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./Nav.vue?vue&type=template&id=7cd4f788& */ "./resources/js/components/Nav.vue?vue&type=template&id=7cd4f788&");
-/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+/* harmony import */ var _Nav_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./Nav.vue?vue&type=script&lang=js& */ "./resources/js/components/Nav.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport *//* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
 
-var script = {}
+
+
 
 
 /* normalize component */
 
-var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_1__["default"])(
-  script,
+var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__["default"])(
+  _Nav_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__["default"],
   _Nav_vue_vue_type_template_id_7cd4f788___WEBPACK_IMPORTED_MODULE_0__["render"],
   _Nav_vue_vue_type_template_id_7cd4f788___WEBPACK_IMPORTED_MODULE_0__["staticRenderFns"],
   false,
@@ -51445,6 +51503,20 @@ var component = Object(_node_modules_vue_loader_lib_runtime_componentNormalizer_
 if (false) { var api; }
 component.options.__file = "resources/js/components/Nav.vue"
 /* harmony default export */ __webpack_exports__["default"] = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/components/Nav.vue?vue&type=script&lang=js&":
+/*!******************************************************************!*\
+  !*** ./resources/js/components/Nav.vue?vue&type=script&lang=js& ***!
+  \******************************************************************/
+/*! exports provided: default */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Nav_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../node_modules/babel-loader/lib??ref--4-0!../../../node_modules/vue-loader/lib??vue-loader-options!./Nav.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/Nav.vue?vue&type=script&lang=js&");
+/* empty/unused harmony star reexport */ /* harmony default export */ __webpack_exports__["default"] = (_node_modules_babel_loader_lib_index_js_ref_4_0_node_modules_vue_loader_lib_index_js_vue_loader_options_Nav_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__["default"]); 
 
 /***/ }),
 

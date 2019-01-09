@@ -13,10 +13,10 @@
 		  		<ul class="list-reset flex flex-1 md:flex-none">
 		  		    <li class="flex-1 md:flex-none md:mr-3 float-right">
 		  				<div class="relative inline-block">
-                              <button class="drop-button text-white focus:outline-none"> 
-                                  <span class="pr-2"><i class="fa fa-user"></i></span> Hi, User <i class="fa fa-caret-down"></i>
+                              <button class="drop-button text-white focus:outline-none" @click.prevent="visible = !visible"> 
+                                  <span class="pr-2"><i class="fa fa-user"></i></span><i class="fa fa-caret-down"></i>
                               </button>
-                              <div id="myDropdown" class="dropdownlist absolute bg-black text-white pin-r mt-3 p-3 overflow-auto z-30 invisible">
+                              <div id="myDropdown" class="dropdownlist absolute bg-black text-white pin-r mt-3 p-3 overflow-auto z-30" :class="visible ? '' : 'invisible'">
                                   <div class="border border-grey-darkest"></div>
                                   <a href="#" class="p-2 hover:bg-grey-darkest text-white text-sm no-underline hover:no-underline block">
                                       <i class="fas fa-sign-out-alt fa-fw"></i> Log Out
@@ -30,3 +30,13 @@
         </nav>
     </div>
 </template>
+<script>
+export default {
+    data() {
+        return {
+            visible: false
+        }
+    }
+}
+</script>
+
