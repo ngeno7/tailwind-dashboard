@@ -2,7 +2,7 @@
     @apply pb-1 text-xs text-white block;
 }
 .nav-link {
-    @apply block py-1 pl-1 align-middle text-white no-underline  border-b-2 border-grey-darkest;
+    @apply block py-1 pl-1 align-middle text-white no-underline border-grey-darkest;
 }
 .tw-widget {
     @apply border-b-4 border-indigo rounded-lg shadow-lg p-5;

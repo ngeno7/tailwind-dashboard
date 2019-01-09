@@ -36955,6 +36955,7 @@ var render = function() {
                 "router-link",
                 {
                   staticClass: "nav-link hover:text-white hover:border-red",
+                  class: _vm.toggle ? "" : "border-b-2",
                   attrs: { to: { name: "home" } }
                 },
                 [
@@ -36982,6 +36983,7 @@ var render = function() {
                 "router-link",
                 {
                   staticClass: "nav-link hover:text-white hover:border-red",
+                  class: _vm.toggle ? "" : "border-b-2",
                   attrs: { to: { name: "stats" } }
                 },
                 [
@@ -37009,6 +37011,7 @@ var render = function() {
                 "router-link",
                 {
                   staticClass: "nav-link hover:text-white hover:border-red",
+                  class: _vm.toggle ? "" : "border-b-2",
                   attrs: { to: { name: "forms" } }
                 },
                 [
@@ -37036,6 +37039,7 @@ var render = function() {
                 "router-link",
                 {
                   staticClass: "nav-link hover:text-white hover:border-red",
+                  class: _vm.toggle ? "" : "border-b-2",
                   attrs: { to: { name: "forms" } }
                 },
                 [
