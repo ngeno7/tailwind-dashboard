@@ -1,29 +1,48 @@
 <template>
-    <div class="bg-black shadow-lg h-16 pin-l mt-12 md:relative md:h-screen z-10 w-full md:w-48">
+    <div :class="!toggle ? 'sidebar-max' : 'sidebar-min'">
         <div class="mt-12 w-48 fixed pin-l pin-t content-start text-left justify-between">
-            <ul class="list-reset flex flex-col text-left py-0 md:py-3 px-1 md:px-2 text-center md:text-left">
+            <ul class="side-nav-list">
                 <li class="mr-3 flex-1">
                     <router-link class="nav-link hover:text-white hover:border-red" :to="{ name: 'home'}">
-                        <i class="fas fa-home pr-0 md:pr-3"></i><span class="nav-link-text">Home</span>
+                        <i class="fas fa-home pr-0 md:pr-3"></i>
+                        <span class="nav-link-text" :class="!toggle ? 'visible' : 'invisible'">Home</span>
                     </router-link>
                 </li>
                 <li class="mr-3 flex-1">
                     <router-link class="nav-link hover:text-white hover:border-red" :to="{ name: 'stats'}">
-                        <i class="fas fa-graph pr-0 md:pr-3"></i><span class="nav-link-text">Stats</span>
+                        <i class="fas fa-signal pr-0 md:pr-3"></i>
+                        <span class="nav-link-text" :class="!toggle ? 'visible' : 'invisible'">Stats</span>
                     </router-link>
                 </li>
                 <li class="mr-3 flex-1">
                     <router-link class="nav-link hover:text-white hover:border-red" :to="{ name: 'forms'}">
-                        <i class="fas fa-users pr-0 md:pr-3"></i><span class="nav-link-text">Forms</span>
+                        <i class="fas fa-users pr-0 md:pr-3"></i>
+                        <span class="nav-link-text" :class="!toggle ? 'visible' : 'invisible'">Forms</span>
                     </router-link>
                 </li>
                 <li class="mr-3 flex-1">
                     <router-link class="nav-link hover:text-white hover:border-red" :to="{ name: 'forms'}">
-                        <i class="fas fa-cogs pr-0 md:pr-3"></i><span class="nav-link-text">Settings</span>
+                        <i class="fas fa-cogs pr-0 md:pr-3"></i>
+                        <span class="nav-link-text" :class="!toggle ? 'visible' : 'invisible'">Settings</span>
                     </router-link>
                 </li>
             </ul>
         </div>
     </div>
 </template>
+<script>
+export default {
+    data () {
+        return {
+            toggle: false
+        }
+    },
+    created() {
+        this.$EventBus.$on('toggle-sidebar', param => {
+          console.log(`Oh, that's nice. It's gotten ${param} clicks! :)`)
+          this.toggle = !this.toggle
+        });
+    }
+}
+</script>
 
